@@ -8,14 +8,14 @@
   },
   "author": "diggzhang",
   "license": "ISC",
-
-  "dependencies" : {
-      "express": "3.4.8",  
-      "ejs": "*",  
-      "feedparser":"0.16.6",  
-      "request":"2.33.0",  
-      "iconv":"2.0.7",  
-      "mongoose":"3.8.7",  
-      "mongodb":"*"  
+  "dependencies": {
+    "ejs": "*",
+    "express": "3.4.8",
+    "feedparser": "0.16.6",
+    "iconv": "2.0.7",
+    "lodash": "^3.5.0",
+    "mongodb": "*",
+    "mongoose": "3.8.7",
+    "request": "2.33.0"
   }
 }

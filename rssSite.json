@@ -1,0 +1,26 @@
+{
+    "channel" : [
+      {
+        "from":"baidu",
+        "name":"civilnews",
+        "work":false,
+        "title":"news from baidu",
+        "link":"http://news.baidu.com/n?cmd=4&class=civilnews&tn=rss",
+        "typeId":1
+      },
+      {
+        "from":"netEase",
+        "name":"rss_gn",
+        "title":"NetNoEase",
+        "link":"http://tech.163.com/special/000944OI/headlines.xml",
+        "typeId":2
+      },
+      {
+        "from" : "ruanyifeng",
+        "name" : "ryf_blog",
+        "title" : "RuanYifeng",
+        "link" : "http://www.ruanyifeng.com/blog/atom.xml",
+        "typeId" : 3
+      }
+    ]
+}
