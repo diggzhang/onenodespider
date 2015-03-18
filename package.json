@@ -1,0 +1,21 @@
+{
+  "name": "rssSpider",
+  "version": "1.0.0",
+  "description": "a RSS Spider Script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "diggzhang",
+  "license": "ISC",
+
+  "dependencies" : {
+      "express": "3.4.8",  
+      "ejs": "*",  
+      "feedparser":"0.16.6",  
+      "request":"2.33.0",  
+      "iconv":"2.0.7",  
+      "mongoose":"3.8.7",  
+      "mongodb":"*"  
+  }
+}
