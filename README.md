@@ -5,7 +5,7 @@ Silly-Spider
 ```shell
 $npm init
 $touch package.json
-#npm install
+\#npm install
 ```
 
 ##Step 2
