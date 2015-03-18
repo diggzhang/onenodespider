@@ -3,9 +3,9 @@ Silly-Spider
 
 ##Step 1
 ```shell
-npm init
-create package.json
-npm install
+$npm init
+$touch package.json
+#npm install
 ```
 
 ##Step 2
