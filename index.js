@@ -39,12 +39,12 @@ function fetchRss(feed, typeId) {
         }
         stream.pipe(feedparser);
     });
-    feedparser.on('error');
+    //feedparser.on('error');
     feedparser.on('end', function(err) {
         if (err) {
             reject(err);
         }
-        resolve(posts);
+    //    resolve(posts);
     });
     feedparser.on('readable', function() {
         var post;
@@ -77,7 +77,10 @@ var channels = rssSite.channel;
 channels.forEach( function(e, i) {
     if(e.work != false) {
         console.log("begin: " + e.title); 
-        fetchRss(e.link, e.typeId);
+        fetchRss(e.link, e.typeId).then( function(data) {
+            console.log(data);
+        });
+        
     }
 });
 
@@ -87,4 +90,14 @@ channels.forEach( function(e, i) {
 /*
 exports.channels = channels;
 exports.fetchRss = fetchRss;
+*/
+
+/*
+var server = require('http').createServer(function (req, res) {
+    var stream = require('fs').createReadStream(require('path').resolve(__dirname, './test/feeds' + req.url));
+    stream.pipe(res);
+});
+server.listen(0, function () {
+    fetchRss('http://localhost:' + this.address().port + '/rss2sample.xml');
+});
 */
